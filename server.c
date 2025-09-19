@@ -16,7 +16,7 @@ void main() {
   listen(s, 10);
   int user_fd = accept(s, 0, 0);
 
-  char buf[1024] = {0};
+  char buf[2048] = {0};
   int read = recv(user_fd, buf, sizeof(buf), 0);
 
   send(read, buf, sizeof(buf), 0);
