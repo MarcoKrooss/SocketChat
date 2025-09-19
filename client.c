@@ -15,7 +15,7 @@ void main() {
   connect(s, &addr, sizeof(addr));
 
   char buf[2048] = {0};
-  send(256, s, buf, sizeof(buf), 0);
+  send(s, buf, sizeof(buf), 0);
 
   close(s);
 }
