@@ -1,3 +1,3 @@
 cmake_minimum_required(VERSION 3.5)
 project(socketchat)
-add_executable(${PROJECT_NAME} main.c)
+add_executable(${PROJECT_NAME} server.c)
